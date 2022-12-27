@@ -10,4 +10,4 @@ for /f "tokens=5" %%a in ('netstat -aon ^| findstr /r ":%port% .*LISTENING"') do
 rem Kill the process
 taskkill /F /PID %pid%
 
-npm i && npm start %dbfile%
+npm i && npm start -- --dbfile=%dbfile%
