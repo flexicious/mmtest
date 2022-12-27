@@ -1,4 +1,6 @@
 @echo off
+rem Get the first argument passed to the script
+set dbfile=%1
 
 set port=8082
 
@@ -8,4 +10,4 @@ for /f "tokens=5" %%a in ('netstat -aon ^| findstr /r ":%port% .*LISTENING"') do
 rem Kill the process
 taskkill /F /PID %pid%
 
-npm i && npm start
+npm i && npm start %dbfile%
