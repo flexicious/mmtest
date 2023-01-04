@@ -1,0 +1,2 @@
+- Start the server:  npm run start /Users/admin/Desktop/code/mastermind/mmexpress/tmp/database.db
+- Run sample command http://localhost:3333/generate-report?filePath=/Users/admin/Desktop/code/mastermind/mmexpress/apps/api/src/app/report-generator/reports/no-passing/route-report/test/test-request.json
